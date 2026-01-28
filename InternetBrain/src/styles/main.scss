@@ -1,0 +1,28 @@
+// Import Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Global Themes
+:root {
+    --brain-bg: #050505;
+    --brain-accent: #00ffcc;
+    --brain-secondary: #cc00ff;
+    --brain-text: #e0e0e0;
+}
+
+body {
+    background-color: var(--brain-bg);
+    color: var(--brain-text);
+    overflow: hidden; /* App interaction handles scrolling/depth */
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom Scrollbar for modals if needed */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 3px;
+}
